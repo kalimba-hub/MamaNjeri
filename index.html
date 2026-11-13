@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mama Njeri's Kitchen serves freshly prepared Kenyan favourites, hearty meals and delicious homemade food in Nairobi.">
+    <meta name="theme-color" content="#281b16">
+    <title>Mama Njeri's Kitchen | Fresh Kenyan Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Mama Njeri's Kitchen home">
+                <span class="brand-mark" aria-hidden="true">MN</span>
+                <span class="brand-text">Mama Njeri's <strong>Kitchen</strong><small>FRESH • LOCAL • DELICIOUS</small></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#menu">Our menu</a>
+                <a href="#story">Our kitchen</a>
+                <a href="#gallery">Gallery</a>
+                <a class="nav-order" href="#order">Order food <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="hero-shade"></div>
+            <div class="hero-content container">
+                <p class="eyebrow"><span></span> THE TASTE OF HOME</p>
+                <h1>Good food.<br><em>Good mood.</em></h1>
+                <p class="hero-copy">Freshly prepared Kenyan favourites, made with love and served with a generous helping of warmth.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#menu">Explore our menu <span aria-hidden="true">→</span></a>
+                    <a class="button button-outline" href="#order">Place an order</a>
+                </div>
+            </div>
+            <div class="hero-stamp" aria-hidden="true"><span>FRESH</span><strong>&</strong><span>LOCAL</span></div>
+            <a class="scroll-cue" href="#menu">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <!-- Welcome strip -->
+        <section class="welcome-strip">
+            <div class="container welcome-inner">
+                <p><span class="welcome-icon" aria-hidden="true">✳</span> Made fresh every day</p>
+                <p><span class="welcome-icon" aria-hidden="true">✳</span> Proudly serving Kenyan flavour</p>
+                <p><span class="welcome-icon" aria-hidden="true">✳</span> Good food, generous portions</p>
+            </div>
+        </section>
+
+        <!-- Menu section -->
+        <section class="section menu-section" id="menu">
+            <div class="container">
+                <div class="section-heading section-heading-centre">
+                    <p class="eyebrow eyebrow-dark">MADE WITH LOVE</p>
+                    <h2>Something delicious<br><em>for everyone.</em></h2>
+                    <p>From comforting Kenyan classics to tasty bites, there is always something good cooking in our kitchen.</p>
+                </div>
+
+                <div class="menu-filters" role="group" aria-label="Filter menu items">
+                    <button class="filter-button active" type="button" data-filter="all">All favourites</button>
+                    <button class="filter-button" type="button" data-filter="mains">Main meals</button>
+                    <button class="filter-button" type="button" data-filter="sides">Sides & snacks</button>
+                    <button class="filter-button" type="button" data-filter="drinks">Drinks</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    <article class="food-card" data-category="mains">
+                        <div class="food-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85" alt="A freshly prepared rice meal" loading="lazy">
+                            <span class="food-tag">CUSTOMER FAVOURITE</span>
+                        </div>
+                        <div class="food-card-body">
+                            <div class="food-title-row"><h3>Swahili Pilau</h3><span class="price">KES 350</span></div>
+                            <p>Fragrant spiced rice, slowly cooked and full of flavour.</p>
+                            <button class="add-order" type="button" data-meal="Swahili Pilau">Add to order <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="mains">
+                        <div class="food-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Grilled meat served fresh" loading="lazy">
+                            <span class="food-tag">FRESH OFF THE GRILL</span>
+                        </div>
+                        <div class="food-card-body">
+                            <div class="food-title-row"><h3>Nyama Choma</h3><span class="price">KES 650</span></div>
+                            <p>Succulent grilled meat, served with a fresh side salad.</p>
+                            <button class="add-order" type="button" data-meal="Nyama Choma">Add to order <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="mains">
+                        <div class="food-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="A fresh green vegetable dish" loading="lazy">
+                        </div>
+                        <div class="food-card-body">
+                            <div class="food-title-row"><h3>Ugali & Sukuma</h3><span class="price">KES 250</span></div>
+                            <p>A true Kenyan classic: soft ugali with tasty sautéed greens.</p>
+                            <button class="add-order" type="button" data-meal="Ugali & Sukuma">Add to order <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="sides">
+                        <div class="food-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85" alt="Golden freshly prepared savoury snacks" loading="lazy">
+                        </div>
+                        <div class="food-card-body">
+                            <div class="food-title-row"><h3>Chapati (2)</h3><span class="price">KES 100</span></div>
+                            <p>Soft, golden and freshly made. Just the way you love them.</p>
+                            <button class="add-order" type="button" data-meal="Chapati (2)">Add to order <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="sides">
+                        <div class="food-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=85" alt="A hearty bowl of freshly cooked food" loading="lazy">
+                        </div>
+                        <div class="food-card-body">
+                            <div class="food-title-row"><h3>Beef Stew</h3><span class="price">KES 400</span></div>
+                            <p>Tender beef simmered in a rich, home-style tomato sauce.</p>
+                            <button class="add-order" type="button" data-meal="Beef Stew">Add to order <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="drinks">
+                        <div class="food-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85" alt="A refreshing cold drink" loading="lazy">
+                        </div>
+                        <div class="food-card-body">
+                            <div class="food-title-row"><h3>Fresh Juice</h3><span class="price">KES 180</span></div>
+                            <p>A refreshing glass of fruity goodness, served chilled.</p>
+                            <button class="add-order" type="button" data-meal="Fresh Juice">Add to order <span aria-hidden="true">+</span></button>
+                        </div>
+                    </article>
+                </div>
+                <p class="menu-note">Menu items and prices shown are sample details for this demonstration website.</p>
+            </div>
+        </section>
+
+        <!-- About / kitchen story -->
+        <section class="story-section" id="story">
+            <div class="container story-grid">
+                <div class="story-photo">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1100&q=85" alt="A welcoming kitchen where fresh meals are prepared" loading="lazy">
+                    <div class="story-photo-note"><strong>Freshly made.</strong><span>Always served with heart.</span></div>
+                </div>
+                <div class="story-copy">
+                    <p class="eyebrow eyebrow-dark">A LITTLE ABOUT US</p>
+                    <h2>From our kitchen<br><em>to your table.</em></h2>
+                    <p>At Mama Njeri's Kitchen, we believe the best meals bring people together. We celebrate the familiar flavours of home with freshly prepared dishes, generous portions and friendly service.</p>
+                    <p>Whether you are stopping by for lunch or sharing a meal with friends, there is always a place for you at our table.</p>
+                    <a class="underlined-link" href="#order">Come hungry, leave happy <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section class="section gallery-section" id="gallery">
+            <div class="container">
+                <div class="gallery-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-dark">A FEAST FOR THE EYES</p>
+                        <h2>Fresh from <em>our kitchen.</em></h2>
+                    </div>
+                    <p>A little look at the delicious moments and good food waiting for you.</p>
+                </div>
+                <div class="gallery-grid">
+                    <img class="gallery-large" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85" alt="A table filled with a variety of delicious dishes" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=85" alt="A colourful fresh meal" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=85" alt="Food being prepared on a grill" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Order section -->
+        <section class="order-section" id="order">
+            <div class="container order-grid">
+                <div class="order-intro">
+                    <p class="eyebrow">YOUR NEXT MEAL IS CALLING</p>
+                    <h2>Good food is<br><em>just a few clicks away.</em></h2>
+                    <p>Choose your favourite dish and send us your order request. We will show you a summary so you can check the details.</p>
+                    <div class="order-promise"><span aria-hidden="true">✓</span> Freshly prepared with care</div>
+                    <div class="order-promise"><span aria-hidden="true">✓</span> Simple and convenient ordering</div>
+                </div>
+
+                <div class="order-panel">
+                    <div class="order-panel-heading">
+                        <span class="order-number">01 / ORDER</span>
+                        <h3>Place your order</h3>
+                        <p>Fill in the details below.</p>
+                    </div>
+                    <form id="orderForm" class="order-form">
+                        <div class="form-row">
+                            <label for="customerName">Your name</label>
+                            <input id="customerName" name="customerName" type="text" placeholder="e.g. Mary Wanjiku" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="customerPhone">Phone number</label>
+                            <input id="customerPhone" name="customerPhone" type="tel" placeholder="e.g. 0712 345 678" required>
+                        </div>
+                        <div class="form-row form-two-cols">
+                            <div>
+                                <label for="mealChoice">Choose a meal</label>
+                                <select id="mealChoice" name="mealChoice" required>
+                                    <option value="">Select a dish</option>
+                                    <option>Swahili Pilau</option>
+                                    <option>Nyama Choma</option>
+                                    <option>Ugali & Sukuma</option>
+                                    <option>Chapati (2)</option>
+                                    <option>Beef Stew</option>
+                                    <option>Fresh Juice</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="mealQuantity">Quantity</label>
+                                <input id="mealQuantity" name="mealQuantity" type="number" min="1" max="20" value="1" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="orderType">Order type</label>
+                            <select id="orderType" name="orderType" required>
+                                <option value="Collection">Collection</option>
+                                <option value="Delivery">Delivery</option>
+                                <option value="Dine in">Dine in</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="orderNotes">Additional instructions <span>(optional)</span></label>
+                            <textarea id="orderNotes" name="orderNotes" rows="3" placeholder="Any preferences or special instructions?"></textarea>
+                        </div>
+                        <button class="button button-primary submit-button" type="submit">Review my order <span aria-hidden="true">→</span></button>
+                        <p class="form-disclaimer">Demo form only: this page displays an order summary but does not send an order to the restaurant.</p>
+                    </form>
+                    <div class="order-result" id="orderResult" role="status" aria-live="polite" hidden></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit / contact section -->
+        <section class="visit-section" id="visit">
+            <div class="container visit-grid">
+                <div>
+                    <p class="eyebrow eyebrow-dark">WE WOULD LOVE TO SEE YOU</p>
+                    <h2>Come on in<br><em>and enjoy a plate.</em></h2>
+                    <p class="visit-copy">Good food tastes even better when shared. Visit Mama Njeri's Kitchen for a warm welcome and a satisfying meal.</p>
+                </div>
+                <div class="visit-details">
+                    <div class="detail-block"><span class="detail-icon" aria-hidden="true">⌖</span><div><h3>Find us</h3><p>Nairobi, Kenya</p></div></div>
+                    <div class="detail-block"><span class="detail-icon" aria-hidden="true">☎</span><div><h3>Call us</h3><p>0712 345 678 <small>(sample number)</small></p></div></div>
+                    <div class="detail-block"><span class="detail-icon" aria-hidden="true">◷</span><div><h3>Opening hours</h3><p>Monday – Saturday: 8:00 am – 9:00 pm<br>Sunday: 10:00 am – 6:00 pm</p></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-main">
+            <a class="brand footer-brand" href="#home">
+                <span class="brand-mark" aria-hidden="true">MN</span>
+                <span class="brand-text">Mama Njeri's <strong>Kitchen</strong><small>FRESH • LOCAL • DELICIOUS</small></span>
+            </a>
+            <p>Real food. Familiar flavours. Made with love.</p>
+            <a class="back-top" href="#home">Back to top ↑</a>
+        </div>
+        <div class="footer-bottom"><div class="container"><span>© <span id="year">2026</span> Mama Njeri's Kitchen. All rights reserved.</span><span>Made for good food lovers in Nairobi.</span></div></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
